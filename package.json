@@ -3,12 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev:projectA": "cross-env PROJECT_NAME=projectA vue-cli-service serve",
+    "dev:projectB": "cross-env PROJECT_NAME=projectB vue-cli-service serve",
+    "dev:projectC": "cross-env PROJECT_NAME=projectC vue-cli-service serve",
+    "dev:projectD": "cross-env PROJECT_NAME=projectD vue-cli-service serve",
+    "dev:common": "cross-env PROJECT_NAME=common vue-cli-service serve",
+    "build:projectA": "cross-env PROJECT_NAME=projectA vue-cli-service build",
+    "build:projectB": "cross-env PROJECT_NAME=projectB vue-cli-service build",
+    "build:projectC": "cross-env PROJECT_NAME=projectC vue-cli-service build",
+    "build:projectD": "cross-env PROJECT_NAME=projectD vue-cli-service build",
+    "build:common": "cross-env PROJECT_NAME=common vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "element-ui": "^2.12.0",
+    "view-design": "^4.0.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -19,12 +29,16 @@
     "@vue/cli-service": "^3.11.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "cross-env": "^6.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
+    "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
